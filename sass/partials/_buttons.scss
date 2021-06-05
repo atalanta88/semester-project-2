@@ -1,0 +1,29 @@
+.btn {
+  border: 3px solid transparent !important;
+}
+
+.btn-primary {
+  color: #f29822 !important;
+  background-color: #f2cf2200 !important;
+  border-color: #f29822 !important;
+  margin-top: 1rem;
+}
+
+.clear-cart-button {
+  margin-top: 1rem;
+}
+
+.btn-primary:hover {
+  color: rgb(0, 0, 0) !important;
+  background-color: #ec9f3a !important;
+  border-color: #ec9f3a !important;
+}
+.btn-primary.focus,
+.btn-primary:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(255, 196, 0, 0.25) !important;
+}
+
+#loginForm .btn {
+  width: 100% !important;
+}

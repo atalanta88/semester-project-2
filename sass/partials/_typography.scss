@@ -1,0 +1,92 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  font-family: "Roboto", sans-serif !important;
+}
+
+.breadcrumb a {
+  color: #222222 !important;
+}
+
+.message {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid rgb(255, 255, 255) !important;
+  border-radius: 5px;
+}
+
+.message.error {
+  border-color: red;
+  color: white;
+  background: red;
+}
+
+.message.warning {
+  border-color: orange !important;
+  color: white !important;
+  background: orange !important;
+}
+
+.message.success {
+  border-color: green;
+  color: white;
+  background: green;
+}
+
+.hero-container h1 {
+  display: block;
+  position: absolute;
+  left: 5%;
+  top: 10%;
+  color: #f29822;
+  font-size: clamp(2rem, 5vw, 5rem);
+}
+
+.hero-container .lead {
+  display: block;
+  position: absolute;
+  left: 5%;
+  top: 30%;
+  color: #e3e4e4;
+  max-width: 600px;
+  font-size: clamp(1rem, 1.6vw, 1.6rem);
+}
+
+.hero-container button {
+  display: block;
+  position: absolute;
+  left: 5%;
+  top: 45%;
+}
+
+.h3,
+h3 {
+  font-size: 1.2rem !important;
+}
+
+.lead {
+  font-weight: 400 !important;
+}
+
+a {
+  color: #383838 !important;
+  background-color: transparent;
+}
+
+footer a {
+  color: #f29822 !important;
+  background-color: transparent;
+}
+footer a:hover {
+  color: #e3e4e4 !important;
+}
+p.all-rights-reserved {
+  font-size: 14px !important;
+}
