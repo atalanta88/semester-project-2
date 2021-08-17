@@ -36,7 +36,7 @@ async function getDetails() {
     container.innerHTML = `
     
    <div class="col image"><img
-    src="${details.image_url}"
+    src="${details.image_url.url}"
     class="img-fluid details"
     alt="Responsive image"/>
    </div>
@@ -82,7 +82,6 @@ async function getDetails() {
     //const idFav = this.dataset.id;
     const title = this.dataset.title;
     const price = this.dataset.price;
-    const image = this.dataset.image;
     const featured = this.dataset.featured;
 
     const currentFavs = getExistingCart();
@@ -99,7 +98,6 @@ async function getDetails() {
         id: id,
         title: title,
         price: price,
-        image: image,
         featured: featured,
       };
 

@@ -6,7 +6,7 @@ export function showProducts(productsToShow) {
     productContainer.innerHTML += `<div class="col  mb-4">
    <a class="product" href="details.html?id=${product.id}">
     <div class="card h-100">
-      <img src="${product.image_url}" class="card-img-top" alt="..." />
+      <img src="${product.image_url.url}" class="card-img-top" alt="..." />
       <div class="card-body">
         <h3 class="card-title">${product.title}</h3>
         <p class="card-text">${product.description}</p>

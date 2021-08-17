@@ -1,1 +1,1 @@
-export const baseUrl = "http://localhost:1337/";
+export const baseUrl = "http://secure-caverns-37781.herokuapp.com/";

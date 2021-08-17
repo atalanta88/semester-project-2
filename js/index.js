@@ -2,13 +2,15 @@ import { displayMessage } from "./ui/displayMessage.js";
 import { baseUrl } from "./api/baseUrl.js";
 import { showFeatured } from "../js/ui/products/showFeatured.js";
 
-const homeUrl = baseUrl + "home";
-const pictureUrl = "http://localhost:1337";
+const homeUrl = baseUrl + "homes";
 
 async function getHero() {
   try {
     const response = await fetch(homeUrl);
     const json = await response.json();
+    const heroPicture = json;
+
+    console.log(heroPicture);
 
     const container = document.querySelector(".hero-container");
 
@@ -22,7 +24,7 @@ async function getHero() {
    </p>
    </div>
 
-   <img src="${pictureUrl}${json.hero_banner.url}"
+   <img src="${heroPicture[0].hero_banner.url}"
     class="img-fluid details"
     alt="Responsive image"/>
     

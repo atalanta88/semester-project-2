@@ -18,10 +18,8 @@ async function productCart() {
     cart.forEach((cartProduct) => {
       container.innerHTML += `
          <div class="row row-cols-4 cart">
-     <div class="col image"><img
-     src="${cartProduct.image}"
-     class="img-fluid"
-     alt="Responsive image"/></div>
+     <div class="col image">
+     </div>
      <a href="details.html?id=${cartProduct.id}"><div class="col"><p class="font-weight-bold">${cartProduct.title}</p></div></a>
      <div class="col"></div>
      <div class="col"><p class="strong">${cartProduct.price} $</div>
