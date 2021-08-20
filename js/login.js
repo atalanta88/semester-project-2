@@ -26,9 +26,9 @@ function submitForm(event) {
       "Please enter correct username and password",
       ".message-container"
     );
+  } else {
+    doLogin(usernameValue, passwordValue);
   }
-
-  doLogin(usernameValue, passwordValue);
 }
 
 async function doLogin(username, password) {
@@ -43,6 +43,7 @@ async function doLogin(username, password) {
       "Content-Type": "application/json",
     },
   };
+  //      "Content-Type": "Authorization",
 
   try {
     const response = await fetch(url, options);
